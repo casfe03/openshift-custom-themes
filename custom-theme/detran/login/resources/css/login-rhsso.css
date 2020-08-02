@@ -1,0 +1,24 @@
+@media (max-width: 767px) {
+    .login-pf body {
+      background-image: none;
+    }
+    .login-pf {
+      background-color: white;
+    }
+}
+
+@media (min-width: 767px) {
+  .login-pf {
+    background-attachment: fixed;
+  }
+}
+
+#kc-header-wrapper {
+    color: #000 !important;
+}
+
+#kc-header-wrapper sup {
+  font-size: 35%;
+  top: -1.4em;
+  color: #000 !important;
+}

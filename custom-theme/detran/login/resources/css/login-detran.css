@@ -1,0 +1,154 @@
+body{
+  background-color: #fff;
+  height: 100vh;
+}
+
+.container-fluid{
+margin: 0;
+padding: 0;
+}
+
+.banner-container,
+.login-container{
+  height: 100vh;
+}
+
+.banner-container{
+  height: 100%;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.banner-container h1{
+  font-weight: bold;
+  padding-top: 50px;
+}
+
+.banner-container img{
+  margin-top: 40px;
+}
+
+.btn-cta .btn-primary{
+  margin-top: 80px;
+  margin-bottom: 40px;
+  background-color: #ffffff;
+  color: #2C5EA8;
+  font-weight: bold;
+}
+
+.login-container{
+  padding: 10px 50px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+	align-items: center;
+}
+
+.banner-container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+	align-items: center;
+}
+
+.bg-detran{
+  background: url("../img/bg-detran.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 768px)  {
+  .banner-container{
+    height: auto;
+  }
+  .banner-container h1{
+    padding-top: 20px;
+  }
+  .login-container{
+    padding: 10px 50px;
+    height: 100%;
+    padding-top: 60px;
+  }
+  .form-login{
+    width: 100%;
+  }
+  .login-container{
+    padding: 10px 50px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.kc-page-title-adjusted {
+  position: relative;
+}
+
+.banner-content {
+  width: 120%;
+}
+
+.login-pf-page-header {
+  text-align: center !important;
+}
+
+.login-pf-page-header h1 {
+  font-size: larger;
+}
+
+.login-pf body {
+  background: #fff none !important;
+  background-size: cover;
+  height: 100%;
+}
+
+.alert-detran {
+  position: relative;
+  left: -15px;
+}
+
+.kc-feedback-text {
+  position: relative;
+  left: 30px;
+  top: 7px;
+}
+
+#kc-info-wrapper {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: small;
+  text-align: justify;
+}
+
+.control-label {
+  font-size: small;
+}
+
+#kc-header-wrapper h1 {
+  color: #2C5EA8;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.button {
+  background-color: #2f7df7;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 300px;
+  border-radius: 4px;
+}
