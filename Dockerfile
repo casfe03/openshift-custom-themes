@@ -1,4 +1,7 @@
+# para ambiente de produção:
 FROM docker-registry.default.svc:5000/openshift/rhsso-oracle
+# para ambiente de desenvolvimento:
+# FROM docker-registry.default.svc:5000/openshift/sso74-openshift-rhel8
 
 USER 185
 

@@ -1,0 +1,27 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  annotations:
+    description: Route for application's https service.
+    openshift.io/generated-by: OpenShiftNewApp
+    openshift.io/host.generated: "true"
+  creationTimestamp: null
+  labels:
+    app: sso74-x509-postgresql-persistent-https-custom-theme
+    application: acesso-dev
+    rhsso: 7.4.1.GA
+    template: sso74-x509-postgresql-persistent-https-custom-theme
+  name: acesso-dev
+  selfLink: /apis/route.openshift.io/v1/namespaces/acesso-desenv/routes/acesso-dev
+spec:
+  host: acesso-dev.detran.df.gov.br
+  tls:
+    insecureEdgeTerminationPolicy: Allow
+    termination: reencrypt
+  to:
+    kind: Service
+    name: acesso-dev
+    weight: 100
+  wildcardPolicy: None
+status:
+  ingress: null

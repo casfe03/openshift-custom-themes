@@ -1,0 +1,26 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  annotations:
+    description: Route for application's https service.
+    openshift.io/generated-by: OpenShiftNewApp
+  creationTimestamp: null
+  labels:
+    app: sso74-x509-oracle-https-custom-theme
+    application: acesso
+    rhsso: 7.4.1.GA
+    template: sso74-x509-oracle-https-custom-theme
+  name: acesso-https
+  selfLink: /apis/route.openshift.io/v1/namespaces/acesso-prod/routes/acesso-https
+spec:
+  host: acesso.detran.df.gov.br
+  tls:
+    insecureEdgeTerminationPolicy: Allow
+    termination: reencrypt
+  to:
+    kind: Service
+    name: acesso-https
+    weight: 100
+  wildcardPolicy: None
+status:
+  ingress: null
